@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="utf-8">
+      <title>Survey Form</title>
+      <!-- Styles -->
+      <link rel="stylesheet" href="assets/css/custom.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <!-- Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Coiny|Lato" rel="stylesheet">
+      <!-- Favicon -->
+      <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png" />
+   </head>
+   <body>
+      <div class="limit-width ">
+         <div class="custom-background">
+            <h1 id="title">
+               <p class="company-name">Working</p>
+               © <br>
+            </h1>
+            <p id="description">Working© is super modern recruitment web site.
+               <br> You can find great job or excellent employees.
+               <br> Please leave any questions or suggestions in following form.
+            </p>
+            <form id="survey-form" action="">
+               <div class="rowLine">
+                  <div class="left-tab">
+                     <label id="name-label" for="name">* Name</label>
+                  </div>
+                  <div class="right-tab">
+                     <input id="name" type="text" name="firstname" required placeholder="Enter your name">
+                  </div>
+               </div>
+               <div class="rowLine">
+                  <div class="left-tab">
+                     <label id="email-label" for="email">* Email</label>
+                  </div>
+                  <div class="right-tab">
+                     <input id="email" type="email" name="email" required placeholder="Enter your email">
+                  </div>
+               </div>
+               <div class="rowLine">
+                  <div class="left-tab">
+                     <label id="number-label" for="number">* Age</label>
+                  </div>
+                  <div class="right-tab">
+                     <input id="number" type="number" name="age" required min="0" max="200" placeholder="22">
+                  </div>
+               </div>
+               <!-- Your Country -->
+               <div class="rowLine">
+                  <div class="left-tab">
+                     <label for="dropdown">* Country</label>
+                  </div>
+                  <div class="right-tab">
+                     <select id="dropdown">
+                        <option value="korea">Korea</option>
+                        <option value="other">Other</option>
+                     </select>
+                  </div>
+               </div>
+               <!-- Your status-->
+               <div class="rowLine">
+                  <div class="left-tab">
+                     <label>Who are you</label>
+                  </div>
+                  <div class="right-tab">
+                     <ul class="flex-wrap-container">
+                        <li>
+                           <label for="employee">
+                           <input id="employee" type="radio" name="iam" value="Employee">Employee
+                           </label>
+                        </li>
+                        <li><label for="hr-manager">
+                           <input id="hr-manager" type="radio" name="iam" value="HR Manager">HR Manager
+                           </label>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <!-- Things I want to be improved -->
+               <div class="rowLine">
+                  <div class="left-tab">
+                     <label>What I think could be better</label>
+                  </div>
+                  <div class="right-tab">
+                     <ul class="flex-wrap-container">
+                        <li><label for="uxui"><input id="uxui" type="checkbox" name="improvement" value="uxui">User
+                           Interface</label>
+                        </li>
+                        <li><label for="performance"><input id="performance" type="checkbox" name="improvement"
+                           value="performance">Performance</label>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <!-- Additional Comments-->
+               <div class="rowLine">
+                  <div class="left-tab top-align">
+                     <label for="comments">Additional comments or suggestions</label>
+                  </div>
+                  <div class="right-tab">
+                     <textarea id="comments"></textarea>
+                  </div>
+               </div>
+               <div class="rowLine">
+                  <input id="submit" type="submit" value="Submit">
+               </div>
+            </form>
+         </div>
+      </div>
+   </body>
+</html>
